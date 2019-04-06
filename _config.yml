@@ -4,7 +4,10 @@ description: ""
 baseurl: "/michel"
 url: "https://mwanheda.github.io"
 
+collections:
+  - steps
+
 # Build settings
-include: ["_pages"]  # include more files
+include: ["_steps"]
 kramdown:
   input: GFM

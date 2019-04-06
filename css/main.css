@@ -1,0 +1,32 @@
+@import url('https://rsms.me/inter/inter.css');
+
+*, *::before *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.master {
+    flex: 1 0 auto;
+}
+
+.container-md {
+    max-width: 888px;
+    margin: auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}

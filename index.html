@@ -2,3 +2,13 @@
 layout: default
 title: Index
 ---
+
+
+<h1>Étapes</h1>
+
+{% for step in site.steps %}
+<div>
+    <a href="{{ site.baseurl }}{{ step.permalink }}">{{ step.time | date: "%H:%M" }}</a>
+    <p>{{ step.description }}</p>
+</div>
+{% endfor %}
