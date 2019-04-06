@@ -1,0 +1,10 @@
+# Site settings
+title: "Michel"
+description: ""
+baseurl: "/michel"
+url: "https://mwanheda.github.io"
+
+# Build settings
+include: ["_pages"]  # include more files
+kramdown:
+  input: GFM
