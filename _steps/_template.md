@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: step
 time: ''
 description: >
   Short description here
@@ -8,8 +8,3 @@ permalink:
 ---
 
 Content here
-
-{% for reference in page.references %}
-[{{ forloop.index }}] {{ reference.author }}. {{ reference.title }}.
-[{{ reference.url }}]({{ reference.url }})
-{% endfor %}

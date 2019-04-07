@@ -27,6 +27,14 @@ body {
     margin: auto;
 }
 
+.references-list {
+   font-size: .85rem;
+}
+
+.references-list li:not(:last-of-type) {
+    margin-bottom: .5rem;
+}
+
 .footer {
     flex-shrink: 0;
 }
