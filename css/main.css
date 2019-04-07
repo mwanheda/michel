@@ -40,6 +40,7 @@ body {
 
 .timeline {
     --gap: 3rem;
+    --bullet-size: 14px;
 }
 
 .timeline-item {
@@ -52,9 +53,10 @@ body {
     content: '';
     flex: 1 0 auto;
     position: relative;
+    margin-top: .5rem;
     margin-right: 3rem;
-    width: 14px;
-    height: 14px;
+    width: var(--bullet-size);
+    height: var(--bullet-size);
     background-color: currentColor;
     border-radius: 50%;
     z-index: 1;
@@ -63,9 +65,9 @@ body {
 .timeline-item:not(:last-of-type)::after {
     content: '';
     position: absolute;
-    top: calc(14px + var(--gap) / 2);
+    top: calc(.5rem + var(--bullet-size) + var(--gap) / 2);
     left: 6px;
-    bottom: calc(var(--gap) / -2);
+    bottom: calc((.5rem + var(--gap)) / -2);
     width: 2px;
     background-color: #999;
     border-radius: 2px;
