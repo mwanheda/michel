@@ -4,11 +4,13 @@ title: Index
 ---
 
 
-<h1>Étapes</h1>
+<h1 class="mt-4 mb-5">Étapes</h1>
 
 {% for step in site.steps %}
-<div>
-    <a href="{{ site.baseurl }}{{ step.permalink }}">{{ step.time | date: "%H:%M" }}</a>
-    <p>{{ step.description }}</p>
+<div class="step-item">
+    <h6 class="step-title">
+        <a class="step-link" href="{{ site.baseurl }}{{ step.permalink }}">{{ step.time | date: "%H:%M" }}</a>
+    </h6>
+    <p class="text-justify">{{ step.description }}</p>
 </div>
 {% endfor %}
