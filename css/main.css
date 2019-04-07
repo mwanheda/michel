@@ -3,14 +3,13 @@
 *, *::before *::after {
     box-sizing: border-box;
 }
-
+<h1 color: #FFF5EE;>
 html {
     font-size: 15px;
 }
 
 html, body {
     height: 100%;
-    color: #FFF5EE;
 }
 
 body {
