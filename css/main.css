@@ -3,10 +3,6 @@
 *, *::before *::after {
     box-sizing: border-box;
 }
-<
-h1 
-color: RGB(255, 245, 238);
->
 
 html {
     font-size: 15px;
