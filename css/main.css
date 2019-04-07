@@ -22,6 +22,12 @@ body {
     flex: 1 0 auto;
 }
 
+.content {
+    max-width: 700px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
 .container-md {
     max-width: 800px;
     margin: auto;
@@ -60,19 +66,80 @@ body {
     background-color: #ddd;
 }
 
+.timeline-title {
+    margin-bottom: 1rem;
+}
+
 .step-time {
     padding: .25rem .5rem;
     color: #fff;
     background-color: #111;
-    border-radius: .5rem;
+    border-radius: .3rem;
 }
 
 .timeline-text {
     margin: 0;
 }
 
+/* Markdown body */
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    /*font-weight: 600;*/
+}
+
+.markdown-body > :first-child {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.markdown-body h2 {
+    font-size: 1.5rem;
+}
+
+.markdown-body h3 {
+    font-size: 1.25rem;
+}
+
+.markdown-body h4 {
+    font-size: 1rem;
+}
+
+.markdown-body h5 {
+    font-size: .875rem;
+}
+
+.markdown-body h6 {
+    color: #6a737d;
+    font-size: .85rem;
+}
+
+.markdown-body blockquote {
+    border-left: .25em solid #dfe2e5;
+    color: #6a737d;
+    padding: 0 1em;
+}
+
+.markdown-body blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+.markdown-body blockquote > :first-child {
+    margin-top: 0;
+}
+
+.references {
+    margin-top: 3rem;
+}
+
 .references-list {
-   font-size: .85rem;
+    font-size: .85rem;
 }
 
 .references-list li:not(:last-of-type) {

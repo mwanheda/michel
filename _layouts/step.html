@@ -2,18 +2,23 @@
 layout: default
 ---
 
-<h1 class="text-center">{{ page.time }}</h1>
+<div class="markdown-body">
+    <h1 class="text-center">{{ page.time }}</h1>
 
-{{ content }}
+    {{ content }}
 
-<ol class="references-list">
-    {% for reference in page.references %}
-    <li>
-        {{ reference.author }}.
-        <a href="{{ reference.url }}">{{ reference.title }}</a><!-- avoid space
+
+    <div class="references">
+        <ol class="references-list">
+            {% for reference in page.references %}
+            <li>
+                {{ reference.author }}.
+                <a href="{{ reference.url }}">{{ reference.title }}</a><!-- avoid space
         -->{% if reference.year %}, {{ reference.year }}{% endif %}.
-        {% if reference.website %}<em>{{ reference.website }}</em>.{% endif %}
-        {% if reference.note %}{{ reference.note }}.{% endif %}
-    </li>
-    {% endfor %}
-</ol>
+                {% if reference.website %}<em>{{ reference.website }}</em>.{% endif %}
+                {% if reference.note %}{{ reference.note }}.{% endif %}
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
+</div>
