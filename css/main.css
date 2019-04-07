@@ -32,31 +32,43 @@ body {
     margin: auto;
 }
 
-.step-item {
+.timeline-item {
     position: relative;
     margin-bottom: 2rem;
+    display: flex;
 }
 
-.step-title {
-    position: relative;
-    text-align: center;
-}
-
-.step-title::after {
+.timeline-item::before {
     content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 2px;
-    background-color: #ddd;
-    z-index: -1;
+    flex: 1 0 auto;
+    position: relative;
+    margin-right: 3rem;
+    width: 14px;
+    height: 14px;
+    background-color: currentColor;
+    border-radius: 50%;
+    z-index: 1;
 }
 
-.step-link {
-    padding: 0 1rem;
-    color: #888;
-    background-color: #fff;
+.timeline-item:not(:last-of-type)::after {
+    content: '';
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    bottom: -2rem;
+    background-color: #ddd;
+}
+
+.step-time {
+    padding: .25rem .5rem;
+    color: #fff;
+    background-color: #111;
+    border-radius: .5rem;
+}
+
+.timeline-text {
+    margin: 0;
 }
 
 .references-list {
