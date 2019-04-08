@@ -1,1 +1,11 @@
-<header class="header"></header>
+<header class="header">
+    <div class="header-inner">
+        <h4 class="mb-0">Parents sous surveillance</h4>
+        <nav class="nav nav-primary">
+            {% for category in site.data.categories %}
+            <a class="nav-link{% if category.id == page.id %} active{% endif %}"
+               href="{{ site.baseurl }}{{ category.url }}">{{ category.title }}</a>
+            {% endfor %}
+        </nav>
+    </div>
+</header>

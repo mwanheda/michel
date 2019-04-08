@@ -3,7 +3,7 @@
 {% include head.html %}
 
 <body>
-<div class="master">
+<div class="master" {% if page.particles %}id="particles-js"{% endif %}>
     {% include header.html %}
 
     <main class="content">
@@ -13,7 +13,13 @@
 
 {% include footer.html %}
 
-{% include scripts.html %}
+<script src="{{ site.baseurl }}/js/particles.min.js"></script>
+<script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', './js/particles.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
+</script>
 </body>
 
 </html>

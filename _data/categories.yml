@@ -1,0 +1,9 @@
+- title: Home
+  url: /
+  id: index
+- title: Michel
+  url: /steps/
+  id: steps
+- title: Solutions
+  url: /solutions
+  id: solutions

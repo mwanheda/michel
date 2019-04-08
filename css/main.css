@@ -22,6 +22,38 @@ body {
     flex: 1 0 auto;
 }
 
+.header {
+    border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-primary {
+    margin-bottom: -1px;
+}
+
+.nav-primary .nav-link {
+    padding: 1rem 0;
+    color: currentColor;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-primary .nav-link:not(:last-of-type) {
+    margin-right: 3rem;
+}
+
+.nav-primary .nav-link.active,
+.nav-primary .nav-link:hover {
+    border-bottom-color: currentColor;
+}
+
 .content {
     max-width: 700px;
     margin: auto;

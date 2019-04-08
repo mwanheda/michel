@@ -1,21 +1,6 @@
 ---
 layout: default
-title: Index
+title: Michel
+id: index
+particles: true
 ---
-
-
-<h1 class="mb-5">Une journée avec Michel</h1>
-
-<div class="timeline">
-    {% for step in site.steps %}
-    <div class="timeline-item">
-        <a class="timeline-content"
-           href="{{ site.baseurl }}{{ step.permalink }}">
-            <h6 class="timeline-title">
-                {{ step.time | date: "%H:%M" }}
-            </h6>
-            <p class="timeline-text">{{ step.description }}</p>
-        </a>
-    </div>
-    {% endfor %}
-</div>
