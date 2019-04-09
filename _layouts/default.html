@@ -2,8 +2,8 @@
 <html lang="en">
 {% include head.html %}
 
-<body>
-<div class="master" {% if page.particles %}id="particles-js"{% endif %}>
+<body {% if page.particles %}id="particles-js"{% endif %}>
+<div class="master">
     {% include header.html %}
 
     <main class="content">

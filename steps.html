@@ -6,11 +6,17 @@ id: steps
 ---
 
 
-<h1 class="mb-5">Une journée avec Michel</h1>
-
-<div class="timeline">
+<nav class="nav steps-nav">
     {% for step in site.steps %}
-    <div class="timeline-item">
+    <a class="nav-link" href="#{{ step.permalink | remove_first: '/'}}">
+        {{ step.time | date: "%H:%M" }}
+    </a>
+    {% endfor %}
+</nav>
+
+<div class="timeline container-md">
+    {% for step in site.steps %}
+    <div class="timeline-item" id="{{ step.permalink | remove_first: '/'}}">
         <a class="timeline-content"
            href="{{ site.baseurl }}{{ step.permalink }}">
             <h6 class="timeline-title">
