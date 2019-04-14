@@ -4,6 +4,10 @@
 - title: Michel
   url: /steps/
   id: steps
-- title: Solutions
-  url: /solutions
-  id: solutions
+- title: Enjeux
+  url: /issues
+  id: issues
+- title: Définitions
+  url: /definitions
+  id: definitions
+

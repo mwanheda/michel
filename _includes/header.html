@@ -1,6 +1,8 @@
 <header class="header">
     <div class="header-inner container-md">
-        <h4 class="mb-0">Parents sous surveillance</h4>
+        <h4 class="mb-0 header-title">
+            <a href="{{ site.baseurl }}/">surveille-michel.com</a>
+        </h4>
         <nav class="nav nav-primary">
             {% for category in site.data.categories %}
             <a class="nav-link{% if category.id == page.id %} active{% endif %}"

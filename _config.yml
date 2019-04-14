@@ -1,13 +1,13 @@
 # Site settings
-title: "Michel"
-description: ""
-baseurl: "/michel"
-url: "https://mwanheda.github.io"
+title: 'Michel'
+description: ''
+baseurl: '/michel'
+url: 'https://mwanheda.github.io'
 
 collections:
   - steps
 
 # Build settings
-include: ["_steps"]
+include: ['_steps', '_pages']
 kramdown:
   input: GFM

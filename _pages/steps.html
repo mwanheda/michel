@@ -17,11 +17,20 @@ id: steps
 <div class="timeline container-md">
     {% for step in site.steps %}
     <div class="timeline-item" id="{{ step.permalink | remove_first: '/'}}">
-        <a class="timeline-content"
+        <a class="timeline-item-content"
            href="{{ site.baseurl }}{{ step.permalink }}">
-            <h6 class="timeline-title">
-                {{ step.time | date: "%H:%M" }}
-            </h6>
+            <div class="timeline-item-header">
+                <h6 class="timeline-item-title">
+                    {{ step.time | date: "%H:%M" }}
+                </h6>
+                <div class="d-flex">
+                    {% for issue in step.issues %}
+                    <div class="timeline-item-issue-badge {{ issue }}">
+                        {{ site.data.dict[issue] }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
             <p class="timeline-text">{{ step.description }}</p>
         </a>
     </div>

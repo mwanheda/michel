@@ -1,8 +1,16 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i');
 
 :root {
-    --orange: #ef795a;
-    --pink: #a83279;
+    --sky: #add0ef;
+    --light-blue: #70beef;
+    --blue: #4d9eef;
+    --navy: #1e232b;
+    --yellow: #ffc107;
+    --red: #dc3545;
+    --green: #28a745;
+    --light: #f8f8f0;
+    --primary: var(--light-blue);
+    --secondary: var(--sky);
 }
 
 *, *::before *::after {
@@ -20,7 +28,18 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Roboto Mono', Arial, sans-serif;
+    font-weight: 300;
+    color: var(--light);
+    background-color: var(--navy);
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--secondary);
 }
 
 .master {
@@ -28,8 +47,8 @@ body {
 }
 
 .header {
-    background-color: rgba(255, 255, 255, .9);
-    border-bottom: 1px solid #eee;
+    background-color: rgba(30, 35, 43, .9);
+    border-bottom: 1px solid #aaa;
     z-index: 2;
 }
 
@@ -37,7 +56,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
+}
+
+.header-title a {
+    color: currentColor;
+    text-decoration: none;
 }
 
 .nav-primary {
@@ -57,31 +80,30 @@ body {
 
 .nav-primary .nav-link.active,
 .nav-primary .nav-link:hover {
-    border-bottom-color: var(--orange);
-}
-
-.content {
-    padding: 0 1rem;
+    border-bottom-color: var(--primary);
 }
 
 .container-md {
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
+    padding: 0 1rem;
 }
 
 .container-sm {
     max-width: 600px;
     margin: auto;
+    padding: 0 1rem;
 }
 
 .steps-nav {
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
     padding: 1rem 0;
-    background-color: #fff;
+    background-color: var(--navy);
     z-index: 2;
 }
 
@@ -120,31 +142,64 @@ body {
     border-radius: 2px;
 }
 
-.timeline-content {
+.timeline-item-content {
     display: block;
     color: currentColor;
 }
 
-.timeline-content:hover {
+.timeline-item-content:hover {
     color: currentColor;
     text-decoration: none;
 }
 
-.timeline-title {
-    margin-bottom: calc(var(--gap) / 2);
+.timeline-item-title {
+    display: inline-block;
+    margin-bottom: 0;
     padding: .4rem .6rem;
     width: fit-content;
     font-weight: 400;
     line-height: 1;
-    color: #fff;
-    background-color: #111;
-    border-radius: .2rem;
-    box-shadow: inset 0 0 0 0 var(--orange);
+    color: var(--navy);
+    background-color: var(--light);
+    box-shadow: inset 0 0 0 0 var(--blue);
     transition: box-shadow .2s ease-in .1s;
 }
 
-.timeline-content:hover .timeline-title {
-    box-shadow: inset 40em 0 0 0 var(--pink);
+.timeline-item-content:hover .timeline-item-title {
+    box-shadow: inset 40em 0 0 0 var(--sky);
+}
+
+.timeline-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: calc(var(--gap) / 2);
+}
+
+.timeline-item-issue-badge {
+    padding: .4em .6em;
+    font-size: .8rem;
+    line-height: 1;
+}
+
+.timeline-item-issue-badge:not(:last-of-type) {
+    margin-right: 1rem;
+}
+
+.timeline-item-issue-badge.economic {
+    background-color: var(--yellow);
+}
+
+.timeline-item-issue-badge.social {
+    background-color: var(--green);
+}
+
+.timeline-item-issue-badge.ethical {
+    background-color: var(--blue);
+}
+
+.timeline-item-issue-badge.political {
+    background-color: #ef795a;
 }
 
 .timeline-text {
@@ -214,9 +269,9 @@ body {
 }
 
 .markdown-body blockquote {
-    border-left: .25em solid #dfe2e5;
-    color: #6a737d;
     padding: 0 1em;
+    color: #8ba0b6;
+    border-left: .25em solid #bbc3cb;
 }
 
 .markdown-body blockquote > :last-child {
