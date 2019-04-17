@@ -15,3 +15,7 @@ id: definitions
 
 **Gamification :** La gamification, c'est rendre quelque chose ludique, amusant, dans le but de le transformer en quelque chose de socialement acceptable.
 
+**Databroker :** Un Databroker ou courtiers des données si on le traduisait en français, désigne une entreprise ou un particulier ayant comme travail d'analyser des données et de vendre les résultats à des organismes qui pourront ensuite les mobiliser. on utilise de plus en plus des algorithmes pour établir des corrélations entre ces données.
+
+**Algorithme :** Un algorithme consiste en un programme informatique effectuant des calculs a partir de données qui lui sont imposées. L'algorithme, est conçu pour répondre a une question précise en mettant en corrélation les données qu'il a reçu.
+
