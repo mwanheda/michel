@@ -211,9 +211,13 @@ a:hover {
     margin-bottom: 3rem;
 }
 
+.arrow-back {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
 .arrow-back,
 .arrow-back:hover {
-    font-size: 2rem;
     color: currentColor;
     text-decoration: none;
 }
@@ -291,6 +295,20 @@ a:hover {
 
 .references-list li:not(:last-of-type) {
     margin-bottom: .5rem;
+}
+
+.solution {
+    padding: 2rem;
+    color: var(--navy);
+    background-color:var(--light);
+}
+
+.solution h2:first-child {
+    margin-top: 0;
+}
+
+.solution p:last-child {
+    margin-bottom: 0;
 }
 
 .footer {

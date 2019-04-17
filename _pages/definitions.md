@@ -7,4 +7,4 @@ id: definitions
 
 <h1 class="mb-5">Définitions</h1>
 
-<p>Coming soon!</p>
+Coming soon!
