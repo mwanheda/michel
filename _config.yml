@@ -9,5 +9,14 @@ collections:
 
 # Build settings
 include: ['_steps', '_pages']
+defaults:
+  - scope:
+      path: 'images/concerns'
+    values:
+      concern: true
+  - scope:
+      path: 'images/steps'
+    values:
+      step: true
 kramdown:
   input: GFM
