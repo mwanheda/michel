@@ -5,7 +5,7 @@
     --light-blue: #70beef;
     --blue: #4d9eef;
     --navy: #1e232b;
-    --yellow: #ffc107;
+    --yellow: #f0b806;
     --red: #dc3545;
     --green: #12C277;
     --light: #f8f8f0;
@@ -29,7 +29,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto Mono', Arial, sans-serif;
-    font-weight: 300;
     color: var(--light);
     background-color: var(--navy);
 }
@@ -237,7 +236,7 @@ a:hover {
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     /*font-weight: 600;*/
 }
@@ -270,7 +269,7 @@ a:hover {
 
 .markdown-body blockquote {
     padding: 0 1em;
-    color: #8ba0b6;
+    color: #86d4cd;
     border-left: .25em solid #bbc3cb;
 }
 

@@ -5,8 +5,8 @@
   url: /steps/
   id: steps
 - title: Enjeux
-  url: /issues
-  id: issues
+  url: /concerns
+  id: concerns
 - title: Définitions
   url: /definitions
   id: definitions

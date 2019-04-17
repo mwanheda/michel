@@ -24,9 +24,9 @@ id: steps
                     {{ step.time | date: "%H:%M" }}
                 </h6>
                 <div class="d-flex">
-                    {% for issue in step.issues %}
-                    <div class="timeline-item-issue-badge {{ issue }}">
-                        {{ site.data.dict[issue] }}
+                    {% for concern in step.concerns %}
+                    <div class="timeline-item-issue-badge {{ concern }}">
+                        {{ site.data.dict[concern] }}
                     </div>
                     {% endfor %}
                 </div>
