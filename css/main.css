@@ -253,7 +253,7 @@ a:hover {
 .markdown-body h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    /*font-weight: 600;*/
+    font-weight: 500;
 }
 
 .markdown-body > :first-child {
