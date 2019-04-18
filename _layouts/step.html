@@ -24,10 +24,11 @@ layout: default
 
         <div class="surveillance-icons">
             {% for type in page.surveillance %}
-            <div class="surveillance-icon {{ type }}">
+            <div class="surveillance-icon {{ type }}"
+                 data-toggle="tooltip" data-placement="bottom"
+                 title="{{ site.data.dict[type] | capitalize }}">
                 <img src="{{ site.baseurl }}/images/icons/{{ type }}.png"
-                     alt="{{ site.data.dict[type] }}"
-                     title="{{ site.data.dict[type] | capitalize }}">
+                     alt="{{ site.data.dict[type] }}">
             </div>
             {% endfor %}
         </div>

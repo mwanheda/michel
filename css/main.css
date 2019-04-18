@@ -179,6 +179,7 @@ a:hover {
     padding: .4em .6em;
     font-size: .8rem;
     line-height: 1;
+    cursor: default;
 }
 
 .concern-badge:not(:last-of-type) {
