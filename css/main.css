@@ -299,6 +299,7 @@ a:hover {
 }
 
 .solution {
+    margin-top: 3rem;
     padding: 2rem;
     color: var(--navy);
     background-color:var(--light);
