@@ -18,6 +18,9 @@ layout: default
         </div>
     </div>
 
+    <img class="step-banner" alt="{{  page.permalink | remove_first: '/' }}"
+         src="{{ site.baseurl }}/images/steps/{{  page.permalink | remove_first: '/' }}.jpg">
+
     <div class="markdown-body">
 
         {{ content }}
