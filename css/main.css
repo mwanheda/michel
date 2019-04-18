@@ -109,6 +109,9 @@ a:hover {
 .timeline {
     --gap: 3rem;
     --bullet-size: 14px;
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .timeline-item {
@@ -319,9 +322,7 @@ a:hover {
 }
 
 .surveillance-icon {
-    --size: 3rem;
-    width: var(--size);
-    height: var(--size);
+    height: 3rem;
 }
 
 .surveillance-icon:not(:last-child) {
@@ -329,7 +330,7 @@ a:hover {
 }
 
 .surveillance-icon img {
-    width: 100%;
+    height: 100%;
 }
 
 .concern-title {

@@ -22,6 +22,7 @@ layout: default
 
         {{ content }}
 
+        <!-- Surveillance icons -->
         <div class="surveillance-icons">
             {% for type in page.surveillance %}
             <div class="surveillance-icon {{ type }}"
@@ -33,6 +34,7 @@ layout: default
             {% endfor %}
         </div>
 
+        <!-- References -->
         <div class="references">
             <ol class="references-list">
                 {% for reference in page.references %}

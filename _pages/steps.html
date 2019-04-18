@@ -8,9 +8,8 @@ id: steps
 
 <nav class="nav steps-nav">
     {% for step in site.steps %}
-    <a class="nav-link" href="#{{ step.permalink | remove_first: '/'}}">
-        {{ step.time | date: "%H:%M" }}
-    </a>
+    <a class="nav-link"
+       href="#{{ step.permalink | remove_first: '/'}}">{{ step.time | date: "%H:%M" }}</a>
     {% endfor %}
 </nav>
 
