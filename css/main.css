@@ -212,21 +212,6 @@ a:hover {
     margin-bottom: 3rem;
 }
 
-.step-title::after {
-    content: '';
-    display: block;
-    height: 8rem;
-    margin-top: 1rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
-}
-
-.step-title.0700::after {
-    background-image: url('../images/concerns/economic.jpg');
-}
-
 .arrow-back {
     font-size: 2rem;
     vertical-align: middle;
