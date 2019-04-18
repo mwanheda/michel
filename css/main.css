@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,500,500i,700,700i');
 
 :root {
     --sky: #add0ef;
@@ -175,29 +175,29 @@ a:hover {
     margin-bottom: calc(var(--gap) / 2);
 }
 
-.timeline-item-issue-badge {
+.concern-badge {
     padding: .4em .6em;
     font-size: .8rem;
     line-height: 1;
 }
 
-.timeline-item-issue-badge:not(:last-of-type) {
+.concern-badge:not(:last-of-type) {
     margin-right: 1rem;
 }
 
-.timeline-item-issue-badge.economic {
+.concern-badge.economic {
     background-color: var(--yellow);
 }
 
-.timeline-item-issue-badge.social {
+.concern-badge.social {
     background-color: var(--green);
 }
 
-.timeline-item-issue-badge.ethical {
+.concern-badge.ethical {
     background-color: var(--blue);
 }
 
-.timeline-item-issue-badge.political {
+.concern-badge.political {
     background-color: #ef795a;
 }
 
@@ -309,6 +309,25 @@ a:hover {
 
 .solution p:last-child {
     margin-bottom: 0;
+}
+
+.surveillance-icons {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.surveillance-icon {
+    --size: 3rem;
+    width: var(--size);
+    height: var(--size);
+}
+
+.surveillance-icon:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.surveillance-icon img {
+    width: 100%;
 }
 
 .concern-title {

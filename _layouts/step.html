@@ -6,15 +6,31 @@ layout: default
     <div class="step-header">
         <div class="step-header-item">
             <a class="material-icons arrow-back"
-               href="{{ site.baseurl }}/steps/">arrow_back</a>
+               href="{{ site.baseurl }}/steps/#{{ page.permalink | remove_first: '/' }}">arrow_back</a>
         </div>
         <h1 class="step-header-item m-0 text-center">{{ page.time }}</h1>
-        <div class="step-header-item"></div>
+        <div class="step-header-item d-flex justify-content-end">
+            {% for concern in page.concerns %}
+            <div class="concern-badge {{ concern }}">
+                {{ site.data.dict[concern] }}
+            </div>
+            {% endfor %}
+        </div>
     </div>
 
     <div class="markdown-body">
 
         {{ content }}
+
+        <div class="surveillance-icons">
+            {% for type in page.surveillance %}
+            <div class="surveillance-icon {{ type }}">
+                <img src="{{ site.baseurl }}/images/icons/{{ type }}.png"
+                     alt="{{ site.data.dict[type] }}"
+                     title="{{ site.data.dict[type] | capitalize }}">
+            </div>
+            {% endfor %}
+        </div>
 
         <div class="references">
             <ol class="references-list">
