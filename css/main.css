@@ -157,14 +157,11 @@ a:hover {;
     border-radius: 2px;
 }
 
-.timeline-item-content {
-    display: block;
-    color: currentColor;
-}
 
-.timeline-item-content:hover {
-    color: currentColor;
-    text-decoration: none;
+.timeline-item:target .timeline-item-content {
+    padding: 1rem;
+    background-color: rgba(240, 184, 6, .1);
+    border-radius: .25rem;
 }
 
 .timeline-item-title {
@@ -176,6 +173,7 @@ a:hover {;
     text-decoration: none;
     color: #fff;
     background-color: var(--navy);
+    border-radius: .25rem;
     box-shadow: inset 0 0 0 0 var(--blue);
     transition: box-shadow .2s ease-in .1s;
 }
@@ -198,6 +196,7 @@ a:hover {;
     font-size: .8rem;
     line-height: 1;
     color: #fff;
+    border-radius: .25rem;
 }
 
 .concern-badge:hover {
