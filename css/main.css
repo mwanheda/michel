@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre:400,700');
+@import url('https://rsms.me/inter/inter.css');
 
 :root {
     --sky: #add0ef;
     --light-blue: #70beef;
-    --blue: #4d9eef;
+    --blue: #0088cc;
     --navy: #1e232b;
     --yellow: #f0b806;
     --red: #dc3545;
     --green: #12C277;
     --light: #f8f8f0;
-    --primary: var(--light-blue);
+    --primary: var(--blue);
     --secondary: var(--sky);
 }
 
@@ -28,17 +29,21 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto Mono', Arial, sans-serif;
-    color: var(--light);
-    background-color: var(--navy);
+    font-family: 'Inter', sans-serif;
+    color: #222;
+    background-color: #fafafa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Miriam Libre', 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 a {
-    color: var(--primary);
+    color: var(--blue);
 }
 
-a:hover {
-    color: var(--secondary);
+a:hover {;
 }
 
 .master {
@@ -46,8 +51,7 @@ a:hover {
 }
 
 .header {
-    background-color: rgba(30, 35, 43, .9);
-    border-bottom: 1px solid #aaa;
+    background-color: rgba(240, 240, 240, 0.8);
     z-index: 2;
 }
 
@@ -60,10 +64,6 @@ a:hover {
 .header-title a {
     color: currentColor;
     text-decoration: none;
-}
-
-.nav-primary {
-    margin-bottom: -1px;
 }
 
 .nav-primary .nav-link {
@@ -101,12 +101,23 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
-    padding: 1rem 0;
-    background-color: var(--navy);
+    padding: .5rem 0;
+    font-size: .9rem;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
     z-index: 2;
 }
 
+.steps-nav .nav-link {
+    color: currentColor;
+}
+
+.steps-nav .nav-link:hover {
+    color: var(--blue);
+}
+
 .timeline {
+    --offset: 5rem;
     --gap: 3rem;
     --bullet-size: 14px;
     position: relative;
@@ -116,8 +127,10 @@ a:hover {
 
 .timeline-item {
     position: relative;
-    margin-bottom: var(--gap);
     display: flex;
+    padding-top: var(--offset);
+    margin-top: calc(var(--offset) * -1);
+    margin-bottom: var(--gap);
 }
 
 .timeline-item::before {
@@ -136,7 +149,7 @@ a:hover {
 .timeline-item:not(:last-of-type)::after {
     content: '';
     position: absolute;
-    top: calc(.5rem + var(--bullet-size) + var(--gap) / 2);
+    top: calc(var(--offset) + var(--bullet-size) * 1.5 + var(--gap) / 2);
     left: calc(var(--bullet-size) / 2 - 1px);
     bottom: calc((.5rem + var(--gap)) / -2);
     width: 2px;
@@ -159,15 +172,17 @@ a:hover {
     margin-bottom: 0;
     padding: .4rem .6rem;
     width: fit-content;
-    font-weight: 400;
     line-height: 1;
-    color: var(--navy);
-    background-color: var(--light);
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--navy);
     box-shadow: inset 0 0 0 0 var(--blue);
     transition: box-shadow .2s ease-in .1s;
 }
 
-.timeline-item-content:hover .timeline-item-title {
+.timeline-item-title:hover {
+    color: #fff;
+    text-decoration: none;
     box-shadow: inset 40em 0 0 0 var(--sky);
 }
 
@@ -182,7 +197,11 @@ a:hover {
     padding: .4em .6em;
     font-size: .8rem;
     line-height: 1;
-    cursor: default;
+    color: #fff;
+}
+
+.concern-badge:hover {
+    color: #fff;
 }
 
 .concern-badge:not(:last-of-type) {
@@ -253,7 +272,6 @@ a:hover {
 .markdown-body h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-weight: 500;
 }
 
 .markdown-body > :first-child {
@@ -311,8 +329,7 @@ a:hover {
 .solution {
     margin-top: 3rem;
     padding: 2rem;
-    color: var(--navy);
-    background-color:var(--light);
+    background-color: #f0f0f0;
 }
 
 .solution h2:first-child {
@@ -373,9 +390,10 @@ a:hover {
 
 .footer {
     flex-shrink: 0;
-    margin-top: 2rem;
-    padding: 2rem 0 4rem;
-    font-size: .9rem;
+    margin-top: 3rem;
+    padding: 5rem 0 4rem;
+    font-size: .8rem;
+    background-color: #f2f2f2;
 }
 
 .particles-js-canvas-el {

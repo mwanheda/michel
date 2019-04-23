@@ -1,0 +1,36 @@
+- name: Analytique
+  description: Utiliser les données pour en extraire du sens, des corrélations, des ‘‘patterns’’.
+  icon: analytic.png
+- name: Audio
+  description: Enregistrer des données audio.
+  icon: audio.png
+- name: Biométrie
+  description: Enregistrer et mesurer des données propres à chaque individu, ses caractéristiques physiologiques et comportementales.
+  icon: biometric.png
+- name: Contre-surveillance
+  description: Détecter les techniques d’espionnage de la part d’autres individus ou d’entreprises envers nous-même.
+  icon: counter.png
+- name: Équipement
+  description: Tout appareil permettant d’aider à effectuer les opérations de surveillance et de contre-surveillance.
+  icon: equipment.png
+- name: Forensique
+  description: Permet d’extraire et de visualiser des données d’un appareil sur lequel le dispositif forensique est installé.
+  icon: forensic.png
+- name: Intrusion
+  description: Installer, sur un appareil technologique, un dispositif permettant d’extraire des données de l’appareil ou de le contrôler à distance.
+  icon: trespassing.png
+- name: Surveillance d’Internet
+  description: Faire de la collecte de données communiquées à travers un réseau Internet.
+  icon: internet.png
+- name: Localisation
+  description: Reconnaître l’emplacement d’un individu grâce à des moyens technologiques tels que la triangulation des téléphones cellulaires ou l’implantation d’un dispositif de pistage.
+  icon: location.png
+- name: Centre de surveillance
+  description: Rassembler différents types de surveillance à l’intérieur d’un seul logiciel ou d’une suite de logiciels.
+  icon: centre.png
+- name: Téléphone
+  description: Faire de la collecte de données communiquées avec des téléphones, fixes ou mobiles.
+  icon: phone.png
+- name: Vidéo
+  description: Enregistrer des données audiovisuelles.
+  icon: video.png

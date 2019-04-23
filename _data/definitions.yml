@@ -1,12 +1,12 @@
-- word: API
-  def: C'est une interface de programmation applicative (application programming interface) qui permet à un logiciel d'offrir des services à d'autres logiciels.
-- word: Cloud
-  def: Le cloud (infonuagique) est une technologie qui permet de mettre sur des serveurs localisés à distance des données de stockage ou des logiciels.
-- word: Serveur
-  def: Un serveur définit un système informatique qui permet de stocker et d’accéder à des documents ou à des informations.
-- word: Gamification
-  def: La gamification, c'est de rendre quelque chose ludique, amusant, dans le but de le transformer en quelque chose de socialement acceptable.
-- word: Databroker
-  def: Un Databroker ou un courtier des données si on le traduisait en français, désigne une entreprise ou un particulier ayant comme travail d'analyser des données et de vendre les résultats à des organismes qui pourront ensuite les mobiliser. On utilise de plus en plus des algorithmes pour établir des corrélations entre ces données.
-- word: Algorithme
-  def: Un algorithme consiste en un programme informatique effectuant des calculs à partir de données qui lui sont imposées. L'algorithme, est conçu pour répondre a une question précise en mettant en corrélation les données qu'il a reçues.
+- title: Algorithme
+  text: Un algorithme consiste en un programme informatique effectuant des calculs à partir de données qui lui sont imposées. L'algorithme, est conçu pour répondre a une question précise en mettant en corrélation les données qu'il a reçues.
+- title: API
+  text: C'est une interface de programmation applicative (application programming interface) qui permet à un logiciel d'offrir des services à d'autres logiciels.
+- title: Cloud
+  text: Le cloud (infonuagique) est une technologie qui permet de mettre sur des serveurs localisés à distance des données de stockage ou des logiciels.
+- title: Databroker
+  text: Un Databroker ou un courtier des données si on le traduisait en français, désigne une entreprise ou un particulier ayant comme travail d'analyser des données et de vendre les résultats à des organismes qui pourront ensuite les mobiliser. On utilise de plus en plus des algorithmes pour établir des corrélations entre ces données.
+- title: Gamification
+  text: La gamification, c'est de rendre quelque chose ludique, amusant, dans le but de le transformer en quelque chose de socialement acceptable.
+- title: Serveur
+  text: Un serveur définit un système informatique qui permet de stocker et d’accéder à des documents ou à des informations.

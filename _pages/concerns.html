@@ -5,26 +5,39 @@ permalink: /concerns
 id: concerns
 ---
 
-<div class="text-justify">
-    <h1 class="mb-5">Élaboration des divers enjeux</h1>
+<h1 class="mb-5">Élaboration des divers enjeux</h1>
 
-    <p></p>
+<h2 class="concern-title economic"
+    id="économique">Enjeux économiques</h2>
 
-    <h2 class="concern-title economic"
-        id="enjeux-économiques">Enjeux économiques</h2>
+<p>Lorsque nous abordons la surveillance des citoyens dans une optique économique, nous nous référons principalement aux entreprises. En effet, l’un des objectifs derrière les entreprises est de faire du profit, ils tirent donc avantage des nouvelles technologies pour amasser des données sur le consommateur. Celles-ci sont, par la suite, utilisées afin de suggérer des produits aux consommateurs en fonction de ses préférences ou pour adapter leurs produits à ce que veulent les consommateurs. Tout cela, bien évidemment, dans l’optique que les citoyens continuent d’acheter les produits de l’entreprise.</p>
 
-    <p>Lorsque nous abordons la surveillance des citoyens dans une optique économique, nous nous référons principalement aux entreprises. En effet, l’un des objectifs derrière les entreprises est de faire du profit, ils tirent donc avantage des nouvelles technologies pour amasser des données sur le consommateur. Celles-ci sont, par la suite, utilisées afin de suggérer des produits aux consommateurs en fonction de ses préférences ou pour adapter leurs produits à ce que veulent les consommateurs. Tout cela, bien évidemment, dans l’optique que les citoyens continuent d’acheter les produits de l’entreprise.</p>
+<h2 class="concern-title social" id="social">Enjeux d'intrusion</h2>
 
-    <h2 class="concern-title social" id="enjeux-sociaux">Enjeux d'intrusion</h2>
+<p>L’enjeu social que nous avons choisi d’aborder est lié au piratage. La technologie ne cesse d’évoluer, et s’insère de plus en plus dans le mode de vie du consommateur. Ainsi, il est fréquent que des pirates utilisent les nouvelles technologies afin de mettre de l’avant la vulnérabilité des consommateurs à l’ère actuelle et les failles des technologies qu’elles utilisent (wilder, 2019). Bien évidemment, il existe plusieurs types de pirates avec des intentions diverses, mais pour les fins du site web, nous avons décidé d’aborder les pirates avec les intentions déjà mentionnées.</p>
 
-    <p>L’enjeu social que nous avons choisi d’aborder est lié au piratage. La technologie ne cesse d’évoluer, et s’insère de plus en plus dans le mode de vie du consommateur. Ainsi, il est fréquent que des pirates utilisent les nouvelles technologies afin de mettre de l’avant la vulnérabilité des consommateurs à l’ère actuelle et les failles des technologies qu’elles utilisent (wilder, 2019). Bien évidemment, il existe plusieurs types de pirates avec des intentions diverses, mais pour les fins du site web, nous avons décidé d’aborder les pirates avec les intentions déjà mentionnées.</p>
+<h2 class="concern-title ethical" id="éthique">Enjeux éthiques</h2>
 
-    <h2 class="concern-title ethical" id="enjeux-éthiques">Enjeux éthiques</h2>
+<p>Ce type d’enjeux concerne les technologies de surveillances qui semblent aller à l’encontre de certaines valeurs ou règles de conduite de la société.</p>
 
-    <p>Ce type d’enjeux concerne les technologies de surveillances qui semblent aller à l’encontre de certaines valeurs ou règles de conduite de la société.</p>
+<h2 class="concern-title political"
+    id="politique">Enjeux politiques</h2>
 
-    <h2 class="concern-title political"
-        id="enjeux-politiques">Enjeux politiques</h2>
+<p>Ceux-ci se réfèrent au gouvernement ainsi qu’aux personnalités ayant du poids dans les décisions ayant un impact sur l’avenir de la population.</p>
 
-    <p>Ceux-ci se réfèrent au gouvernement ainsi qu’aux personnalités ayant du poids dans les décisions ayant un impact sur l’avenir de la population.</p>
-</div>
+
+<h1 id="les-types-de-surveillance">Les types de surveillance</h1>
+
+<ul class="list-unstyled">
+    {% for surveillance in site.data.surveillances %}
+    <li class="d-flex">
+        <div class="surveillance-icon"
+             data-toggle="tooltip" data-placement="bottom"
+             title="{{ surveillance.name }}">
+            <img src="{{ site.baseurl }}/images/icons/{{ surveillance.icon }}"
+                 alt="{{ surveillance.name }}">
+        </div>
+        {{ surveillance.name }} : {{ surveillance.description }}
+    </li>
+    {% endfor %}
+</ul>

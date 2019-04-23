@@ -5,7 +5,7 @@ id: index
 particles: true
 ---
 
-<div class="mt-5 container-md markdown-body" markdown="1">
+<div class="mt-5 container-md markdown-body text-justify" markdown="1">
 
 La technologie occupe une place de choix au sein de la société actuelle. Au fil des ans, de nouveaux appareils voient le jour et facilitent la vie des consommateurs tout en faisant place à de nouveaux besoins.
 

@@ -1,0 +1,29 @@
+---
+layout: markdown
+title: Définitions
+permalink: /definitions
+id: definitions
+---
+
+<h1 class="mb-5">Définitions</h1>
+
+<h2 id="mise-en-contexte-des-objets-connectés">Mise en contexte des objets connectés</h2>
+
+<h3>Que sont-ils ?</h3>
+
+<p>L’Internet des objets constitue un grand réseau parmi lequel on retrouve l’ensemble des appareils connectés au réseau Internet tel que des imprimantes, des téléphones cellulaires, des machines à café, des machines à laver, des lumières, etc. — (Guarana, 2018)</p>
+
+<p>L’Internet des objets permet ainsi à une panoplie d’objets qui n’était pas originalement conçue pour être connectée à Internet, de l’être. Ces objets physiques interagissent entre eux et transmettent des données à un réseau. Ce réseau permet aux objets d’être connectés à Internet (Ibid).</p>
+
+<h2 id="diverses-définitions">Diverses définitions</h2>
+
+<div class="mt-4">
+    {% for definition in site.data.definitions %}
+    <div class="row no-gutters">
+        <div class="col-2 font-weight-bold"
+             id="{{ definition.title | downcase }}">{{ definition.title }}
+        </div>
+        <p class="col">{{ definition.text }}</p>
+    </div>
+    {% endfor %}
+</div>
