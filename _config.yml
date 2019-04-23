@@ -1,7 +1,7 @@
 # Site settings
 title: 'Michel'
 description: ''
-baseurl: '/michel'
+baseurl: '/surveille-michel'
 url: 'https://mwanheda.github.io'
 
 collections:
