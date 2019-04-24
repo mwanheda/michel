@@ -1,8 +1,8 @@
 ---
 layout: markdown
-title: Bibliographie
-permalink: /bibliography
-id: bibliography
+title: Références
+permalink: /references
+id: references
 ---
 
 # Références
