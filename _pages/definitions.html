@@ -5,7 +5,7 @@ permalink: /definitions
 id: definitions
 ---
 
-<h1 class="mb-5">Définitions</h1>
+<h1>Définitions</h1>
 
 <h2 id="mise-en-contexte-des-objets-connectés">Mise en contexte des objets connectés</h2>
 
@@ -19,11 +19,11 @@ id: definitions
 
 <div class="mt-4">
     {% for definition in site.data.definitions %}
-    <div class="row no-gutters" id="{{ definition.title | downcase }}">
+    <div class="row no-gutters definition" id="{{ definition.title | downcase }}">
         <div class="col-2">
             <strong>{{ definition.title }}</strong>
         </div>
-        <p class="col">{{ definition.text }}</p>
+        <p class="col mb-0">{{ definition.text }}</p>
     </div>
     {% endfor %}
 </div>
