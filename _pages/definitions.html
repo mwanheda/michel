@@ -20,10 +20,10 @@ id: definitions
 <div class="mt-4">
     {% for definition in site.data.definitions %}
     <div class="row no-gutters definition" id="{{ definition.title | downcase }}">
-        <div class="col-2">
+        <div class="col-12 col-md-2 mb-2">
             <strong>{{ definition.title }}</strong>
         </div>
-        <p class="col mb-0">{{ definition.text }}</p>
+        <p class="col-12 col-md mb-0">{{ definition.text }}</p>
     </div>
     {% endfor %}
 </div>
