@@ -5,13 +5,12 @@
     --sky: #add0ef;
     --light-blue: #70beef;
     --blue: #0088cc;
-    --navy: #1e232b;
     --yellow: #f0b806;
     --red: #dc3545;
     --green: #12C277;
     --light: #f8f8f0;
     --primary: var(--blue);
-    --secondary: var(--sky);
+    --secondary: var(--light-blue);
 }
 
 *, *::before *::after {
@@ -172,7 +171,7 @@ a:hover {;
     line-height: 1;
     text-decoration: none;
     color: #fff;
-    background-color: var(--navy);
+    background-color: #222;
     border-radius: .25rem;
     box-shadow: inset 0 0 0 0 var(--blue);
     transition: box-shadow .2s ease-in .1s;
@@ -310,6 +309,7 @@ a:hover {;
 
 .markdown-body blockquote {
     padding: 0 1em;
+    font-weight: 300;
     color: #6a737d;
     border-left: .25em solid #bbc3cb;
 }
