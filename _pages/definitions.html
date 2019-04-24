@@ -19,9 +19,9 @@ id: definitions
 
 <div class="mt-4">
     {% for definition in site.data.definitions %}
-    <div class="row no-gutters">
-        <div class="col-2 font-weight-bold"
-             id="{{ definition.title | downcase }}">{{ definition.title }}
+    <div class="row no-gutters" id="{{ definition.title | downcase }}">
+        <div class="col-2">
+            <strong>{{ definition.title }}</strong>
         </div>
         <p class="col">{{ definition.text }}</p>
     </div>

@@ -278,6 +278,10 @@ a:hover {;
     margin-bottom: 2rem;
 }
 
+.markdown-body h1 {
+    font-size: 2rem;
+}
+
 .markdown-body h2 {
     font-size: 1.5rem;
 }
@@ -297,6 +301,11 @@ a:hover {;
 .markdown-body h6 {
     color: #6a737d;
     font-size: .85rem;
+}
+
+.markdown-body img {
+    max-width: 100%;
+    margin-bottom: 1rem;
 }
 
 .markdown-body blockquote {
@@ -344,15 +353,15 @@ a:hover {;
     margin-top: 3rem;
 }
 
-.surveillance-icon {
+.surveillance-icon-wrapper {
     height: 3rem;
 }
 
-.surveillance-icon:not(:last-child) {
+.surveillance-icon-wrapper:not(:last-child) {
     margin-right: 1rem;
 }
 
-.surveillance-icon img {
+.surveillance-icon-wrapper img {
     height: 100%;
 }
 
@@ -360,31 +369,15 @@ a:hover {;
     text-align: left;
 }
 
-.concern-title::after {
-    content: '';
-    display: block;
+.concern-img {
     height: 8rem;
-    margin-top: 1rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    width: 100%;
+    object-fit: cover;
+    border-radius: .25rem;
 }
 
-.concern-title.economic::after {
-    background-image: url('../images/concerns/economic.jpg');
-}
-
-.concern-title.social::after {
-    background-image: url('../images/concerns/social.jpg');
-}
-
-.concern-title.ethical::after {
-    background-image: url('../images/concerns/ethical.jpg');
-}
-
-.concern-title.political::after {
-    background-image: url('../images/concerns/political.jpg');
+.surveillance-type-icon {
+    width: 2rem;
 }
 
 .footer {
