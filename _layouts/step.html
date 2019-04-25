@@ -11,9 +11,10 @@ layout: default
         <h1 class="step-header-item m-0 text-center">{{ page.time }}</h1>
         <div class="step-header-item d-flex justify-content-end">
             {% for concern in page.concerns %}
-            <div class="concern-badge {{ concern }}">
+            <a class="concern-badge {{ concern }}"
+               href="{{ site.baseurl }}/concerns#{{ site.data.dict[concern] }}">
                 {{ site.data.dict[concern] }}
-            </div>
+            </a>
             {% endfor %}
         </div>
     </div>

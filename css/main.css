@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Miriam+Libre:400,700');
 @import url('https://rsms.me/inter/inter.css');
 
+@keyframes emphasize {
+    from {
+        background-color: rgba(240, 168, 51, 0.2);
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
 :root {
     --sky: #add0ef;
     --light-blue: #70beef;
@@ -40,9 +49,6 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: var(--blue);
-}
-
-a:hover {;
 }
 
 .master {
@@ -159,8 +165,8 @@ a:hover {;
 
 .timeline-item:target .timeline-item-content {
     padding: 1rem;
-    background-color: rgba(240, 184, 6, .1);
     border-radius: .25rem;
+    animation: emphasize 2s;
 }
 
 .timeline-item-title {
@@ -232,15 +238,23 @@ a:hover {;
 }
 
 .arrow-back {
-    color: currentColor;
     font-size: 2rem;
     vertical-align: middle;
-    transition: color .15s;
+    color: currentColor;
 }
 
 .arrow-back:hover {
-    color: var(--primary);
+    color: currentColor;
     text-decoration: none;
+}
+
+a.arrow-back {
+    border-radius: .25rem;
+    transition: background-color .2s;
+}
+
+a.arrow-back:hover {
+    background-color: rgba(100, 100, 100, .1);
 }
 
 .step-header-item:nth-child(2) {
@@ -392,11 +406,12 @@ a:hover {;
 
 .definition {
     padding: 1rem;
+    margin: 0 -1rem;
     border-radius: .25rem;
 }
 
 .definition:target {
-    background-color: rgba(240, 184, 6, .1);
+    animation: emphasize 2s;
 }
 
 .footer {
