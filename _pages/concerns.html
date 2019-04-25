@@ -40,10 +40,10 @@ id: concerns
 
 <ul class="list-unstyled mt-5">
     {% for surveillance in site.data.surveillances %}
-    <li class="row no-gutters mb-3" id="{{ surveillance.icon }}">
+    <li class="row no-gutters surveillance-type" id="{{ surveillance.icon }}">
         <div class="col-4" title="{{ surveillance.name }}">
             <img src="{{ site.baseurl }}/images/icons/{{ surveillance.icon }}.png"
-                 class="mr-3 surveillance-type-icon"
+                 class="mr-3 mb-0 surveillance-type-icon"
                  alt="{{ surveillance.name }}">
             <strong>{{ surveillance.name }}</strong>
         </div>

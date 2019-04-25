@@ -304,6 +304,10 @@ a.arrow-back:hover {
     margin-bottom: 3rem;
 }
 
+.markdown-body h1:not(:first-child) {
+    margin-top: 3rem;
+}
+
 .markdown-body h2 {
     font-size: 1.5rem;
 }
@@ -389,15 +393,22 @@ a.arrow-back:hover {
     height: 100%;
 }
 
-.concern-title {
-    text-align: left;
-}
-
 .concern-img {
     height: 8rem;
     width: 100%;
     object-fit: cover;
     border-radius: .25rem;
+}
+
+.surveillance-type {
+    padding: .5rem 0;
+}
+
+.surveillance-type:target {
+    padding: .5rem;
+    margin: 0 -.5rem;
+    border-radius: .25rem;
+    animation: emphasize 2s;
 }
 
 .surveillance-type-icon {
