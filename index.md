@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Acceuil
 id: index
 particles: true
 ---
