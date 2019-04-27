@@ -168,7 +168,7 @@ a {
     padding: 1rem;
     border-radius: .25rem;
     background-color: var(--hightlight);
-    animation: highlight 2s 1s;
+    animation: highlight 2s 1s forwards;
 }
 
 .timeline-item-title {
@@ -411,7 +411,7 @@ a.arrow-back:hover {
     margin: 0 -.5rem;
     border-radius: .25rem;
     background-color: var(--hightlight);
-    animation: highlight 2s 1s;
+    animation: highlight 2s 1s forwards;
 }
 
 .surveillance-type-icon {
@@ -426,7 +426,7 @@ a.arrow-back:hover {
 
 .definition:target {
     background-color: var(--hightlight);
-    animation: highlight 2s 1s;
+    animation: highlight 2s 1s forwards;
 }
 
 .footer {
